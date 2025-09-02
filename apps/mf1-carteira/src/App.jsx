@@ -32,4 +32,24 @@ function App() {
   )
 }
 
+// src/App.jsx
+import VirtualCardManager from './components/VirtualCardManager';
+
+function App() {
+  const cardInfo = {
+    number: '1234 5678 9012 3456',
+    expiry: '12/28',
+    status: 'Ativo',
+  };
+
+  return <VirtualCardManager cardInfo={cardInfo} cashback={87.45} />;
+}
+
+import WalletDashboard from './components/WalletDashBoard';
+
+function App() {
+  return <WalletDashboard stablecoinBalance={150.25} exchangeRate={5.12} />;
+}
+
 export default App
+
